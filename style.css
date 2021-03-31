@@ -1,0 +1,43 @@
+/* body
+{
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+/* ------------------------------HEADER----------------------------- */
+
+/* .header
+{
+    width: 100%;
+    background: linear-gradient(to bottom right,#F2B236, #FF9C1A);
+}
+
+.header__menu
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin-left: 10%;    
+}
+
+.logo
+{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.header__text
+{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #884900;
+}
+
+.header__form
+{
+
+} */ 
