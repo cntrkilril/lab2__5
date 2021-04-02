@@ -11,7 +11,7 @@
 
         <header class="header">
 
-            <a class="header__icon__link" href="/">
+            <a class="header__icon__link justify-start" href="/">
 
                 <img class="header__icon" src="images/корзина.svg" alt="корзина">
 
@@ -20,7 +20,7 @@
 
             <h2 class="header__logo">Лаборатория игр</h2>
 
-            <a class="header__icon__link" href="/">
+            <a class="header__icon__link  justify-end" href="/">
 
                 <img class="header__icon" src="images/МЕНЮИКОНКА.svg" alt="меню">
 
@@ -36,13 +36,13 @@
         
         <main class="main">
 
-            <h1 class="h1">Каталог игр</h1>
+            <h1 class="h1">Акции и новости</h1>
 
             <form class="main__form">
 
-                <label>Поиск по сайту</label>
+                <label class="main__form__input__label">Поиск по акциям и новостям...</label>
 
-                <input class="main__form__input" type="text" placeholder="Поиск по сайту....">
+                <input class="main__form__input" type="text" placeholder="Поиск по акциям и новостям...">
 
                 <button class="main__form__button">
 
@@ -56,39 +56,35 @@
             
                 <p class="sort">сначала:
 
-                    <a class="sort_link" href="/">новые</a>
+                    <a class="sort__link" href="/">новые</a>
 
                 </p>
 
                 <div class="filterBlock">
 
-                    <div class="filterBlock__header">
+                    <button class="filterBlock__header">
 
-                        <h3 class="filterBlock__header__text">ФИЛЬТР</h3>
+                        <h3 class="filterBlock__header__text sort">ФИЛЬТР</h3>
 
                         <img class="filterBlock__header__icon" src="images/Vector26.svg" alt="выдвижение фильтра">
 
-                        <a class="filterBlock__header__delete" href="/">Очистить</a>
+                    </button>
 
-                    </div>
+                    <div class="filterBlock__kategory">
 
-                    <div class="filterBlock__price">
-
-                        <h4 class="filterBlock__header__text price__text">Категории</h4>
+                        <h4 class="filterBlock__kategory__text">Категории</h4>
 
                         <form class="filter__form">
+                            
+                            <input type="checkbox" class="filter__form__checkbox"> 
 
-                            <label>
+                            <label class="filter__form__label">Акции и спец. предложения</label>
+                            
+                            <input type="checkbox"  class="filter__form__checkbox">
 
-                                <input type="checkbox">Акции и спец. предложения
+                            <label class="filter__form__label">Новости</label>
 
-                            </label>
-
-                            <label>
-
-                                <input type="checkbox">Новости
-
-                            </label>
+                            <button class="filter__form__button sort">ПОКАЗАТЬ ТОВАРЫ</button>
 
                         </form>
 
@@ -97,6 +93,8 @@
                 </div>
 
             </article>
+
+            <h2 class="main__h2">Январь-февраль 2021</h2>
 
             <section class="main__newsBlock">
 
@@ -222,7 +220,7 @@
 
                 </div>
 
-                <div class="footer__block__unblock">
+                <div class="footer__block__unblock footer__block__unblock__area23">
 
                     <a class="footer__block__unblock__link" href="/">Отзывы</a>
 
@@ -238,7 +236,7 @@
 
                 </div>
 
-                <div class="footer__block__unblock">
+                <div class="footer__block__unblock footer__block__unblock__area12">
 
                     <a class="footer__block__unblock__link" href="/"><b>Личный кабинет</b></a>
 
