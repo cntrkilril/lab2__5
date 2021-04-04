@@ -7,22 +7,46 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>ПчелкаШоп</title>
 </head>
+
     <body>
 
         <header class="header">
 
             <a class="header__icon__link justify-start" href="/">
 
-                <img class="header__icon" src="images/корзина.svg" alt="корзина">
+                <picture class="header__icon"  alt="корзина">
+
+                    <source class="header__icon" srcset="images/корзинаBigMedium.svg" media="(min-width: 575px)">
+
+                    <img class="header__icon" src="images/корзинаSmall.svg">
+
+                </picture>
 
             </a>
 
+            <div class="header__logo">
 
-            <h2 class="header__logo">Лаборатория игр</h2>
+                <picture class="header__logo__img" alt="ПчелкаШоп">
+
+                    <source srcset="images/FrameBig.svg" media="(min-width: 800px)">
+
+                    <img src="images/FrameMedium.svg">
+
+                </picture>
+
+                <h2 class="header__logo__text">Лаборатория игр</h2>
+
+            </div>
 
             <a class="header__icon__link  justify-end" href="/">
 
-                <img class="header__icon" src="images/МЕНЮИКОНКА.svg" alt="меню">
+                <picture class="header__icon"  alt="корзина">
+
+                    <source class="header__icon" srcset="images/МЕНЮИКОНКАBigMedium.svg" media="(min-width: 575px)">
+
+                    <img class="header__icon" src="images/МЕНЮИКОНКАSmall.svg">
+
+                </picture>
 
             </a>
 
@@ -34,6 +58,8 @@
 
         </header>
         
+
+
         <main class="main">
 
             <h1 class="h1">Акции и новости</h1>
@@ -51,146 +77,183 @@
                 </button>
 
             </form>
-
-            <article class="filter">
             
-                <p class="sort">сначала:
+            <button class="sort-button">сначала: новые
 
-                    <a class="sort__link" href="/">новые</a>
+                <img class="sort-button__img" src="images/Vector26.svg" alt="выдвижение фильтра">
 
-                </p>
+            </button>
 
-                <div class="filterBlock">
+            <div class="main__section-article">
 
-                    <button class="filterBlock__header">
+                <h2 class="main__h2">Фильтр</h2>
+                
+                <article class="filter">
 
-                        <h3 class="filterBlock__header__text sort">ФИЛЬТР</h3>
+                    <p class="sort-p">сначала:
 
-                        <img class="filterBlock__header__icon" src="images/Vector26.svg" alt="выдвижение фильтра">
+                        <a class="sort-p__link" href="/">новые</a>
 
-                    </button>
+                    </p>
 
-                    <div class="filterBlock__kategory">
+                    <div class="filterBlock">
 
-                        <h4 class="filterBlock__kategory__text">Категории</h4>
+                        <button class="filterBlock__header">
 
-                        <form class="filter__form">
+                            <h3 class="filterBlock__header__text sort-p">ФИЛЬТР</h3>
+
+                            <img class="filterBlock__header__icon" src="images/Vector26.svg" alt="выдвижение фильтра">
+
+                        </button>
+
+                        <div class="filterBlock__kategory">
+
+                            <h4 class="filterBlock__kategory__text">Категории</h4>
+
+                            <form class="filter__form">
+                                
+                                <input type="checkbox" class="filter__form__checkbox"> 
+
+                                <label class="filter__form__label">Акции и спец. предложения</label>
+                                
+                                <input type="checkbox"  class="filter__form__checkbox">
+
+                                <label class="filter__form__label">Новости</label>
+
+                                <button class="filter__form__button sort-p">ПОКАЗАТЬ ТОВАРЫ</button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <h2 class="main__h2">Январь-февраль 2021</h2>
+
+                <section class="main__newsBlock">
+
+                    <div class="news">
+
+                        <div class="news__header">
+
+                            <picture class="news__header__img">
+
+                                <source srcset="images/Group243Small.png" media="(max-width: 575px)">
+
+                                <img src="images/Group243BigMedium.png" alt="информация">
+
+                            </picture>
                             
-                            <input type="checkbox" class="filter__form__checkbox"> 
+                            <p class="news__header__text">Скидка -15% на групповой заказ</p>
 
-                            <label class="filter__form__label">Акции и спец. предложения</label>
+                            <p class="news__header__untext">1.01.21</p>
+
+                        </div>
+
+                        <p class="news__text">Получите скидку -15% при 
+                            оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
+
+                        <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
+
+                        <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
+
+                        <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news__header">
+
+                            <picture class="news__header__img">
+
+                                <source srcset="images/Group243Small.png" media="(max-width: 575px)">
+
+                                <img src="images/Group243BigMedium.png" alt="информация">
+
+                            </picture>
                             
-                            <input type="checkbox"  class="filter__form__checkbox">
+                            <p class="news__header__text">Скидка -15% на групповой заказ</p>
 
-                            <label class="filter__form__label">Новости</label>
+                            <p class="news__header__untext">1.01.21</p>
 
-                            <button class="filter__form__button sort">ПОКАЗАТЬ ТОВАРЫ</button>
+                        </div>
 
-                        </form>
+                        <p class="news__text">Получите скидку -15% при 
+                            оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
 
-                    </div>
+                        <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
 
-                </div>
+                        <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
 
-            </article>
-
-            <h2 class="main__h2">Январь-февраль 2021</h2>
-
-            <section class="main__newsBlock">
-
-                <div class="news">
-
-                    <div class="news__header">
-
-                        <img class="news__header__img" src="images/Group243.png" alt="информация">
-
-                        <p class="news__header__text">Скидка -15% на групповой заказ</p>
-
-                        <p class="news__header__untext">1.01.21</p>
+                        <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
 
                     </div>
 
-                    <p class="news__text">Получите скидку -15% при 
-                        оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
+                    <div class="news">
 
-                    <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
+                        <div class="news__header">
 
-                    <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
+                            <picture  class="news__header__img">
 
-                    <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
+                                <source srcset="images/Group243Small.png" media="(max-width: 575px)">
 
-                </div>
+                                <img src="images/Group243BigMedium.png" alt="информация">
 
-                <div class="news">
+                            </picture>
 
-                    <div class="news__header">
+                            <p class="news__header__text">Скидка -15% на групповой заказ</p>
 
-                        <img class="news__header__img" src="images/Group243.png" alt="информация">
+                            <p class="news__header__untext">1.01.21</p>
 
-                        <p class="news__header__text">Скидка -15% на групповой заказ</p>
+                        </div>
 
-                        <p class="news__header__untext">1.01.21</p>
+                        <p class="news__text">Получите скидку -15% при 
+                            оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
 
-                    </div>
+                        <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
 
-                    <p class="news__text">Получите скидку -15% при 
-                        оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
+                        <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
 
-                    <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
-
-                    <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
-
-                    <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
-
-                </div>
-
-                <div class="news">
-
-                    <div class="news__header">
-
-                        <img class="news__header__img" src="images/Group243.png" alt="информация">
-
-                        <p class="news__header__text">Скидка -15% на групповой заказ</p>
-
-                        <p class="news__header__untext">1.01.21</p>
+                        <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
 
                     </div>
 
-                    <p class="news__text">Получите скидку -15% при 
-                        оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
+                    <div class="news">
 
-                    <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
+                        <div class="news__header">
 
-                    <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
+                            <picture class="news__header__img">
 
-                    <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
+                                <source srcset="images/Group243Small.png" media="(max-width: 575px)">
 
-                </div>
+                                <img src="images/Group243BigMedium.png" alt="информация">
 
-                <div class="news">
+                            </picture>
 
-                    <div class="news__header">
+                            <p class="news__header__text">Скидка -15% на групповой заказ</p>
 
-                        <img class="news__header__img" src="images/Group243.png" alt="информация">
+                            <p class="news__header__untext">1.01.21</p>
 
-                        <p class="news__header__text">Скидка -15% на групповой заказ</p>
+                        </div>
 
-                        <p class="news__header__untext">1.01.21</p>
+                        <p class="news__text">Получите скидку -15% при 
+                            оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
+
+                        <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
+
+                        <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
+
+                        <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
 
                     </div>
 
-                    <p class="news__text">Получите скидку -15% при 
-                        оформлении группового заказа в период с 1 января 2021 г. по 19 февраля 2021 г.</p>
+                </section>
 
-                    <p class="news__text">Используйте промокод январь15 при оформлении заказа.</p>
+            </div>
 
-                    <p class="news__untext">Теги: <a class="news__untext__link" href="/">акции и спец. предложения</a></p>
-
-                    <a class="news__link" href="/">ЧИТАТЬ ПОЛНОСТЬЮ</a>
-
-                </div>
-
-            </section>
 
         </main>
 
@@ -198,7 +261,7 @@
 
             <div class="footer__header">
 
-                <img class="footer__header__logo" src="images/Group667.png" alt="логотип">
+                <img class="footer__header__logo" src="images/Group667Small.png" alt="логотип">
 
                 <p class="footer__header__text">8(800) 000 00 00 МСК (9-21)<br>
                     pchelkashop.ru@mail.ru
@@ -208,7 +271,7 @@
 
             <div class="footer__block">
 
-                <div class="footer__block__unblock">
+                <div class="footer__block__unblock footer__block__unblock__area-m12">
 
                     <a class="footer__block__unblock__link" href="/">Акции и новости</a>
 
@@ -261,4 +324,5 @@
         </footer>
 
     </body>
+
 </html>
